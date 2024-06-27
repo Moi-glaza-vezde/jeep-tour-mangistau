@@ -1,0 +1,123 @@
+.header {
+   position: relative;
+   .change-lang {
+      position: absolute;
+      z-index: 2;
+      top: 30px;
+      left: 30px;
+      width: 100px;
+      //appearance:;
+      font-weight: 600;
+      font-size: 18px;
+      padding: 5px 10px;
+      background-color: #d3d3d3d6;
+      backdrop-filter: blur(10px);
+      // color: #fff;
+      border: 2px solid #fff;
+      border-radius: 10px;
+      cursor: pointer;
+      option {
+         width: 50px;
+         font-size: 16px;
+         font-weight: 400;
+      }
+   }
+   &__menu-burger {
+      display: none;
+      @media (max-width: 823px) {
+         cursor: pointer;
+         display: block;
+         position: absolute;
+         // background: red;
+
+         z-index: 2;
+         top: 30px;
+         right: 30px;
+      }
+      width: 50px;
+      height: 38px;
+      background-color: inherit;
+   }
+   &__stripe-burger::before {
+      content: '';
+      display: inline-block;
+      width: 50px;
+      height: 5px;
+      background: #ffff;
+      margin-top: 15px;
+   }
+
+   &__stripe-burger {
+      width: 50px;
+      height: 5px;
+      background: #ffff;
+   }
+
+   &__stripe-burger::after {
+      content: '';
+      display: inline-block;
+      width: 50px;
+      height: 5px;
+      background: #ffff;
+      //margin-top: 10px;
+   }
+   &__video-bg {
+      // @media (max-width: 1125px) {
+      //    height: 900px;
+      // }
+      height: 100vh;
+      height: 900px;
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      video {
+         z-index: 1;
+         height: 100vh;
+         height: 900px;
+         width: 100%;
+         position: absolute;
+         top: 0;
+         left: 0;
+         object-fit: cover;
+         filter: brightness(0.7);
+      }
+   }
+
+   &__container {
+      z-index: 2;
+      width: 100%;
+   }
+   &__main-title {
+      padding: 0 5px 30px 5px;
+      //padding-bottom: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+   }
+   &__title {
+      @media (max-width: 400px) {
+         font-size: 50px;
+      }
+      @media (max-width: 400px) {
+         font-size: 40px;
+      }
+      font-size: 60px;
+      font-weight: 600;
+      color: #fff;
+   }
+   &__text {
+      padding-top: 30px;
+      color: #fff;
+      font-size: 30px;
+   }
+   &__phone {
+      padding-top: 20px;
+      color: #fff;
+      font-size: 30px;
+      font-style: italic;
+      font-weight: 600;
+   }
+}

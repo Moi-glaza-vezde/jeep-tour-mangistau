@@ -1,0 +1,73 @@
+.footer {
+   background: linear-gradient(#402c09c0, #392f27);
+   background: #4a4e4d;
+   background: #313c40;
+   background: linear-gradient(#402c09c0, #392f27);
+   background: linear-gradient(#1f1a0d, #251b14a1);
+
+   //background: #000000;
+   &__container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 5px;
+   }
+   &__contacts {
+      padding-bottom: 20px;
+   }
+
+   &__contacts-title {
+      font-size: 60px;
+      color: #fff;
+   }
+
+   &__box-item {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+   }
+
+   &__logo {
+      margin-top: 10px;
+      width: 200px;
+      border: 2px solid #fff;
+      img {
+         width: 100%;
+      }
+   }
+
+   &__phone {
+      margin-top: 10px;
+
+      align-self: center;
+   }
+
+   &__phone-number {
+      font-size: 25px;
+      font-weight: 600;
+      font-style: italic;
+      padding-bottom: 20px;
+      color: #fff;
+   }
+
+   &__icons-box {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__icon {
+      img {
+         width: 40px;
+      }
+   }
+
+   &__address {
+      margin-top: 10px;
+
+      align-self: center;
+      p {
+         font-size: 30px;
+         font-weight: 500;
+         color: #fff;
+      }
+   }
+}

@@ -1,0 +1,132 @@
+.gallery {
+   padding: 30px 0;
+   background: linear-gradient(#fff, #93796482, #805d28a8);
+
+   &__container {
+      padding: 0 10px;
+   }
+
+   &__title {
+      @media (max-width: 610px) {
+         font-size: 40px;
+      }
+      @media (max-width: 414px) {
+         font-size: 30px;
+      }
+      text-align: center;
+      font-size: 60px;
+      font-weight: 600;
+      max-width: 900px;
+      margin: 0 auto;
+      padding-bottom: 50px;
+   }
+}
+
+.slider {
+   position: relative;
+   z-index: 1;
+   max-width: 1000px;
+   margin: 0 auto;
+   border-radius: 10px;
+   box-shadow: 0px 5px 10px 5px #000;
+   background: #000;
+}
+
+.slider__item {
+   position: relative;
+
+   text-align: center;
+   img {
+      border-radius: 10px;
+
+      width: 100%;
+      filter: brightness(0.8);
+   }
+   p {
+      @media (max-width: 610px) {
+         font-size: 40px;
+      }
+      @media (max-width: 439px) {
+         font-size: 35px;
+         //   left: 50px;
+      }
+      filter: brightness(1.3);
+
+      position: absolute;
+      top: 100px;
+      left: 10%;
+      //left: 10%;
+      color: #fff;
+      font-size: 50px;
+      font-weight: 600;
+   }
+}
+
+.slick-list {
+   overflow: hidden;
+}
+
+.slick-track {
+   display: flex;
+}
+
+.slick-arrow {
+   position: absolute;
+   top: 50%;
+   font-size: 0;
+}
+
+.slick-arrow.slick-prev {
+   left: 0;
+   z-index: 10;
+   background-color: #ffffffa8;
+   width: 50px;
+   height: 50px;
+   border-radius: 50px;
+}
+
+.slick-arrow.slick-next {
+   right: 0;
+   background-color: #ffffffa8;
+   width: 50px;
+   height: 50px;
+   border-radius: 50px;
+}
+
+/* Стрілка не активна */
+
+/* Точки (буліти) */
+.slick-dots {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.slick-dots li {
+   @media (max-width: 610px) {
+      margin: 15px 10px;
+   }
+   margin: 15px 15px;
+}
+
+/* Активна точка */
+.slick-dots li.slick-active button {
+   background-color: aqua;
+   background-color: #805d28;
+}
+
+/* Елемент точки */
+.slick-dots li button {
+   @media (max-width: 610px) {
+      width: 30px;
+      height: 10px;
+   }
+   //position: absolute;
+   background-color: #ffffff6d;
+   //  margin: 0 10px;
+   font-size: 0;
+   width: 40px;
+   height: 20px;
+   border-radius: 5px;
+   bottom: 10px;
+}

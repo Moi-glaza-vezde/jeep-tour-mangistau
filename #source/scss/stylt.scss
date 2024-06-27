@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+@import 'nullstyle.scss';
+@import 'header.scss';
+@import 'header-nav.scss';
+@import 'advantages.scss';
+@import 'services.scss';
+@import 'tours.scss';
+@import 'gallery.scss';
+@import 'company-info.scss';
+@import 'footer.scss';
+html {
+   scroll-behavior: smooth;
+}
+.dont-scroll {
+   overflow: hidden;
+}
+.wrapper {
+   font-family: 'Source Sans 3', sans-serif;
+   //max-width: 1200px;
+   // margin: 0 auto;
+   a {
+      color: inherit;
+   }
+}
+.main {
+   //padding: 30px 0;
+   padding-top: 30px;
+   // background: radial-gradient(#523a16, #523a1666);
+}
+.anim {
+   opacity: 0;
+   //transition-duration: 1s;
+}
+.active {
+   transition-duration: 1s;
+   opacity: 1;
+}

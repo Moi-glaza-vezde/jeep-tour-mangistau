@@ -1,0 +1,151 @@
+.tours {
+   background: linear-gradient(#93796482, #805d28a8, #fff);
+   //background: radial-gradient(#93796482, 20%, #5f4549);
+
+   &__container {
+      padding: 50px 5px;
+
+      max-width: 1200px;
+      margin: 0 auto;
+   }
+
+   &__title {
+      @media (max-width: 759px) {
+         font-size: 50px;
+      }
+      @media (max-width: 513px) {
+         font-size: 40px;
+      }
+      @media (max-width: 400px) {
+         font-size: 30px;
+      }
+      text-align: center;
+      font-size: 60px;
+      font-weight: 600;
+   }
+
+   &__text {
+      @media (max-width: 513px) {
+         font-size: 20px;
+      }
+      @media (max-width: 400px) {
+         font-size: 18px;
+      }
+      padding-top: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 500;
+   }
+
+   &__box-item {
+      padding-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+   }
+
+   &__item {
+      position: relative;
+      overflow: hidden;
+
+      border-radius: 10px;
+      max-width: 500px;
+      background: #ffff;
+      box-shadow: 5px 5px 10px #000;
+      margin: 20px 0 0 0;
+      height: 716px;
+      //height: 100%;
+      transition-duration: 0.1s;
+   }
+   &__item--active {
+      height: 100%;
+      //height: 1600px;
+      transition-duration: 0.1s;
+   }
+   &__img {
+      max-width: 500px;
+      max-height: 500px;
+      img {
+         width: 100%;
+      }
+   }
+   &__info {
+      padding: 20px 10px;
+   }
+   &__info-more {
+      cursor: pointer;
+      color: #9f5727;
+      font-size: 18px;
+      float: right;
+      padding-right: 10px;
+      font-weight: 400;
+   }
+   &__info-more-arrow {
+      float: right;
+      font-size: 20px;
+      font-weight: 600;
+      transform: rotate(90deg);
+   }
+   &__info-list {
+      @media (max-width: 431px) {
+         font-size: 20px;
+      }
+      font-size: 25px;
+      font-weight: 600;
+
+      li {
+         @media (max-width: 431px) {
+            font-size: 18px;
+         }
+         padding-left: 10px;
+         margin-top: 10px;
+         font-size: 20px;
+         line-height: 22px;
+         font-weight: 500;
+      }
+   }
+
+   &__button {
+      @media (max-width: 340px) {
+         width: 250px;
+      }
+      color: #fff;
+      font-size: 25px;
+
+      margin-top: 30px;
+      margin-left: 15px;
+      text-align: center;
+      width: 300px;
+      background-color: #9f5727;
+      padding: 20px 0px;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px #000000;
+      transition-duration: 0.3s;
+      cursor: pointer;
+   }
+   &__button:hover {
+      transform: scale(1.08);
+   }
+   .lang-toursList1 {
+      font-size: 25px;
+      font-weight: 600;
+   }
+   .lang-toursList2 {
+      font-size: 25px;
+      font-weight: 600;
+   }
+   .lang-toursList3 {
+      font-size: 25px;
+      font-weight: 600;
+   }
+   .lang-toursList4 {
+      font-size: 25px;
+      font-weight: 600;
+   }
+   .lang-toursList5 {
+      font-size: 25px;
+      font-weight: 600;
+   }
+}
